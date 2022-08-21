@@ -1,0 +1,1015 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+}
+
+.cleaner {
+	clear: both;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#wrapper {
+	width: 1200px;
+	margin: 0px auto;
+}
+
+#header {
+	height: auto;
+	width: inherit;
+	position: fixed;
+	top: 0px;
+	z-index: 3;
+}
+
+#header #gornji {
+	width: inherit;
+	height: 25px;
+	/*position: relative;*/
+	background-color: rgb(11, 13, 15);
+}
+
+#gornji #mreze {
+	width: 14%;
+	float: left;
+	padding-top: 3px;
+}
+
+#gornji #mreze ul {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+/*#header #gornji #mreze a {
+	color: #fff;
+}*/
+
+.fa {
+	font-size: 18px;
+}
+#header #gornji #mreze #sitemap {
+	background-image: url('../slike/sitemapa.jpg');
+	background-size: cover;
+	height: 18px;
+	width: 18px;
+	display: inline-block;
+}
+#gornji #mreze ul li .fa-facebook-square:hover{
+	color: #4286f4;
+}
+
+#gornji #mreze ul li .fa-instagram:hover {
+	color: #dba6ed;
+}
+
+#gornji #mreze ul li .fa-twitter:hover {
+	color:#48c5f2;
+}
+
+#gornji #mreze ul li .fa-youtube-play:hover {
+	color: #f40000;
+}
+#logovanje {
+	float: right;
+	width: 30%;
+}
+
+#logovanje ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	
+	
+}
+#logovanje details:hover {
+	cursor: pointer;
+}
+#logovanje details>summary {
+	color: #fff;
+}
+#logovanje details>form {
+	position: absolute;
+	z-index: 10;
+	background-color: #f76a6a;
+	width: 200px;
+	padding: 20px 5px;
+}
+#logovanje input[type="text"],#logovanje input[type="password"],#logovanje input[type="email"]{
+	height: 30px;
+}
+input[type="checkbox" i] {
+-webkit-appearance: checkbox;}
+
+summary::-webkit-details-marker { font-size:0px;}
+summary::-details-marker { font-size:0px;}
+/*#logovanje ul .border:first-child {
+	border-right: 5px solid #fff;
+}*/
+
+#logovanje ul li {
+	padding: 0px 5px 0px 8px;
+}
+
+/*#logovanje ul li a {
+	color: #b7b5b5;
+	font-size: 14px;
+}*/
+/*#logovanje ul li a:hover {
+	color: #c64141*//*#C7181F*/        /* !important;*/
+
+
+#logovanje ul .material-icons {
+	color: #fff;
+	font-size: 20px;
+}
+#srednji {
+	height: 100px;
+	/*border: 1px solid red;*/
+	width: 100%;
+	background-color: rgb(247, 246, 244);
+}
+
+#srednji #levo {
+	width: 35%;
+	/*background-color red;*/
+	height: inherit;
+	display: flex;
+	justify-content:space-around;
+	float: left;
+}
+
+#srednji #levo #slika {
+	background-color: gray;                      
+	 width: 100%;                                    /*Obradi sliku u photoshopu i onda obriisi background*/
+	height: 95px;
+	background-image: url('../slike/kokola.png');
+	background-size: cover;
+	background-position: 0% 55%;
+}
+#srednji #levo a {
+	width: 38%;
+}
+#srednji #levo #natpis h1 {
+	padding: 25px 0px;
+	font-style: italic;
+	color: #C7181F;
+	font-size: 35px;;
+}
+
+#srednji #desno {
+	float: right;
+	background-image: url('../slike/deadpool.png');
+	background-size: cover;                          /* sliku obradi !!!!!!!!!!!! */
+	width: 60%;
+	height: 100px;
+	background-position: 0% 40%;
+}
+
+#meni {
+	width: 100%;
+}
+
+#meni ul {
+	width: 88%;
+	height: 30px;
+	display: flex;
+	justify-content:space-around;
+	margin: 0px auto;
+	
+}
+
+#meni ul .active a {
+	color:  #aeafaf/*#b7b5b5*/;
+}
+
+#meni ul .active{
+	border-right: 1px solid #dee2e2;
+	border-bottom: 2px solid #000;
+}
+
+#meni ul li {
+	color: #fff;
+	font-size: 18px;
+	width: 15%;
+	text-align: center;
+	background-color: rgba(17, 16, 16,0.8);
+	padding: 5px;
+	border-radius: 0px 0px 3px 3px;
+}
+
+#meni ul li:hover a {
+	color: #aeafaf;
+	transition: color 0.5s;
+}
+#meni #dugme {
+	display: none;
+}
+
+#slajder {
+	margin-top: 100px;
+	background-image: url('../slike/slider.png');
+	background-size: cover;
+	width: 100%;
+	height: 520px;
+	border-radius: 5px;
+	background-position: 15% 100%;
+}
+
+#slajder #tekst {
+	width: auto;
+	position: absolute;
+	text-transform: uppercase;
+	z-index: 2;
+	color: #fff;
+	background-color: rgba(84, 86, 86, 0.5);
+	border-radius: 5px;
+	margin-top: 20%;
+	padding: 15px;
+}
+
+#slajder #tekst p:nth-child(2){
+	text-transform: lowercase;
+}
+
+#slajder #tekst #rezervisi {
+	color: /*#c64141*/#e03535;
+	
+}
+
+#slajder #tekst .material-icons {
+	color:  #c64141;
+	font-size: 20px;
+}
+
+#slajder #tekst a:hover {
+	border-bottom: 1px solid #c64141 ;
+}
+
+.repetoar {
+	width: 100%;
+	height: auto;
+	background-color: rgb(50, 50, 50);
+	padding-bottom: 30px;
+}
+
+.repetoar h2 {
+	color: #fff;
+	padding: 30px 0px 5px 30px;
+}
+
+.repetoar #datum {
+	color: #e03535;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 30px 0px 0px 50px;
+}
+
+.repetoar ul {
+	width: 45%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 15px 0px 50px 10px;
+}
+
+.repetoar ul li  {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;                        
+	width: 13%;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(17, 16, 16,0.8);
+	border-radius: 10px 2px 10px 2px;
+}
+
+.repetoar ul .dan {
+	background-color: #e03535;
+}
+
+.repetoar ul li:hover {
+	background-color: #636262;
+	transition: background 0.5s;
+}
+
+.repetoar #filmovi {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.repetoar #filmovi .movies {
+	width: 33.33%;
+	height: auto;
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+}
+.repetoar #filmovi .movies .film {
+	width: 50%;   /*16*/
+	height: 255px;
+	background-color: gray;
+	border-radius: 3px;
+	/*margin: 0px 0px 20px 20px;*/
+	background-size: cover;
+	position: relative;
+	/*margin-top: 20px;*/
+}
+.repetoar #filmovi .movies #prvi {
+	background-image: url('../slike/1.png');	
+}
+.repetoar #filmovi .movies #drugi {
+	background-image: url('../slike/2.png');
+}
+.repetoar #filmovi .movies #treci {
+	background-image: url('../slike/3.png');
+}
+.repetoar #filmovi .movies #sesti {
+	background-image: url('../slike/6.png');
+}
+.repetoar #filmovi .movies #sedmi {
+	background-image: url('../slike/7.png');
+}
+.repetoar #filmovi .movies #osmi {
+	background-image: url('../slike/8.png');
+}
+
+.repetoar #filmovi .info {
+	width: 23%;  /*8*/
+	height: 55px;
+	background-color: #000;
+	color: #fff;
+	text-align: center;
+	/*margin-left: 50px;*/
+	padding: 5px;
+	border-radius: 2px;
+	/*margin-top: 30px;*/
+}
+
+.repetoar #filmovi .info .vreme {
+	width: 50px;
+	font-size: 19px;
+	font-weight: bold;
+	border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+.repetoar #filmovi .film .naziv,.detalji {
+	position: absolute;
+	background-color: rgba(17, 16, 16,0.8);
+	color: #fff;
+	padding: 3px;
+	border-radius: 2px;
+}
+
+.repetoar #filmovi .film .naziv {
+	padding: 5px;
+	font-size: 19px;
+}
+
+.repetoar #filmovi .film .detalji {
+	display: none;
+}
+
+.repetoar #filmovi .film:hover .detalji {
+	display: block;
+	margin-top: 180px;
+}
+
+.repetoar #filmovi .film:hover a {
+	border-bottom: 1px solid #fff;
+}
+
+#clanstvo, #onama {
+	width: 100%;
+	height: auto;
+	color: #fff;
+	background-color: rgb(11, 13, 15);
+}
+
+#clanstvo {
+	border-top: 4px dotted rgb(50, 50, 50);
+	border-bottom: 4px dotted rgb(50, 50, 50);
+	padding: 50px 0px 60px 0px;
+}
+
+#clanstvo #tekst1, #clanstvo #bodovi {
+	width: 60%;
+	word-wrap: break-word;
+	text-indent: 3%;
+	padding: 40px 0px 40px 25px;
+	font-size: 19px;
+	text-align: justify;
+	float: left;
+	letter-spacing: 1px;
+}
+
+#clanstvo #tekst1 .podnaslov {
+	font-style: italic;
+	font-size: 22px;
+	color: #e03535;
+}
+
+#clanstvo #bodovi ul li {
+	padding: 3px;
+	font-size: 17px;
+}
+#clanstvo #bodovi {
+	float: right;
+	width: 38%;
+	padding-top: 80px; 
+	padding-right:25px;
+	text-transform: uppercase;
+}
+
+#clanstvo #bodovi .drugi {
+	border-bottom: 1px dotted #e03535;
+	font-weight: bold;
+	text-align: center;
+	padding: 3px;
+	font-size: 20px;
+}
+
+#onama {
+	background-color: rgb(50, 50, 50);
+	padding: 50px 20px 70px 0px;
+	border-bottom: 2px dotted #555556;
+}
+
+#onama #tekst2, #autor #oAutoru {
+	width: 55%;
+	height: auto;
+	word-wrap: break-word;
+	text-indent: 3%;
+	padding: 50px;
+	font-size: 19px;
+	text-align: justify;
+	float: left;
+	letter-spacing: 1px;
+}
+#onama #sala {
+	width: 45%;
+	background-image: url('../slike/sala.png');
+	height: 500px;
+	float: right;
+}
+#onama h3, #clanstvo h3, #autor h3, #sadrzaj h3 {
+	font-size: 27px;
+	color: #fff;
+}
+#autor {
+	background-color: rgb(50, 50, 50);
+	height: auto;
+	padding: 30px 30px 30px 0px;
+	color: #fff;
+	
+}
+#autor h3 {
+	text-align: center;
+	padding-bottom: 60px;
+}
+#autor #ja {
+	width: 45%;
+	background-image: url('../slike/ja.png');
+	height: 370px;
+	float: left;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#autor #oAutoru {
+	padding: 20px 20px 20px 0px;
+	float: right;
+	
+}
+
+#footer {
+	width: 100%;
+	height: auto;
+	/*background-color:  rgb(247, 246, 244);*/
+	background-color: rgb(11, 13, 15);
+	color: #fff;
+	border-top: 4px dotted rgb(50, 50, 50);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding-top: 70px;
+	
+}
+
+
+#footer  .futer {
+	width: 33.33%;
+	height: auto;
+	margin-bottom: 40px;
+	text-align: center;
+	color:#969494;
+}
+
+#footer /*#center*/ .futer h4 {
+	text-transform: uppercase; 
+	padding-bottom: 5px;
+	color: #e03535;
+	letter-spacing: 1px;
+	font-size: 22px;
+}
+
+#footer #center .futer a:hover {
+	color:#636262;
+}
+
+#footer .futer p, #footer .futer ul li a {
+	font-size: 18px;
+	color: #fff;
+}
+								
+										/*Bas sam lepa*/
+										
+
+#oFilmu {
+	margin-top: 170px;
+	display: flex;
+	height: auto;
+	width: 100%;
+}
+#oFilmu #video {
+	width: 65%;
+	height: 450px;
+}
+#oFilmu #informacije {
+	width: 35%;
+	height: auto;
+	background-color: rgb(11, 13, 15);
+}
+#oFilmu #informacije #inf {
+	width: 100%;
+}
+#oFilmu #informacije #inf .sira {
+	width: 60%;
+}
+#oFilmu #informacije #inf td  {
+	padding: 10px;
+}
+#oFilmu #informacije #inf .fa-ticket {
+	padding-left: 4px;
+	color: #84f765;
+}
+ #sadrzaj {
+	width: 100%;
+	height: auto;
+	background-color: #555556;
+	padding: 20px;
+	border-top: 3px dotted rgb(11, 13, 15);
+	
+}
+#sadrzaj h2 {
+	padding: 0px 0px 30px 25px;
+	font-size: 27px;
+	color: #fff;
+}
+#sadrzaj #basSamLepa {
+	background-image: url('../slike/1.png');
+}
+ #sadrzaj #basSamLepa, #sadrzaj #ukradenaPrinceza, #sadrzaj #jura, #sadrzaj #deadpool, #sadrzaj #klubZena, #sadrzaj #osvetnici {
+	width: 15%;
+	height: 240px;
+	background-size: cover;
+	float: left;
+}
+#sadrzaj #prepricano {
+	width: 85%;
+	float: right;
+	padding: 15px 30px;
+	text-align: justify;
+	letter-spacing: 1px;
+}
+
+                                              /*kontakt stranica*/
+											  
+											  
+#mapa {
+	width: 100%;
+	height:370px;
+	
+}  
+#kontakt {
+	display: flex;
+	height: auto;
+	margin-top: 160px;
+	width: 100%;
+}
+#kontakt h2 {
+	text-align: center;
+	padding-top: 15px;
+	font-size: 27px;
+}
+#kontakt #kontNas,#kontakt #pozovite {
+	width: 70%;
+	height: auto;
+}
+#kontakt #kontNas {
+	background-image: url('../slike/cine.png');
+	background-size: cover;
+	
+}
+#kontakt #kontNas #opacity {
+	background-color:  black;
+	height: auto;
+	opacity: 0.93;
+	padding: 30px;
+}
+
+#kontakt #kontNas #opacity #konForma label {
+	font-size: 22px;
+	display: block;
+	margin: 15px 0px;;
+}
+#kontakt #kontNas #opacity #konForma  input[type], textarea {
+	width: 100%;
+	height: 35px;
+	font-size: 15px;
+	color: #5b5b5a;
+}
+#kontakt #kontNas #opacity #konForma #btnSend {
+	padding: 10px 14px;
+	font-size: 27px;
+	margin-top: 15px;
+	background-color: #000;
+	color: #fff;
+	
+}
+
+#kontakt #kontNas #opacity #konForma #btnSend:hover {
+	background-color:#5b5b5a ;
+	color: #000;
+	border-color: #000;
+}
+
+#kontakt #pozovite {
+	width: 30%;
+	font-size: 20px;
+	border-left: 3px dotted #000;
+	background-color: rgb(50, 50, 50);
+	text-align: center;
+
+}
+#kontakt #pozovite .fa {
+	font-size: 22px;
+	padding-right: 7px;
+}
+#kontakt #pozovite h2 {
+	padding-bottom: 30px;
+}
+#kontakt #pozovite span {
+	display: block;
+	margin-bottom: 15px;
+}
+
+
+
+										/*Uskoro stranica*/
+										
+#uskoro {
+	padding-top: 160px;
+}
+#uskoro #filmovi .movies  #usk1 {
+	background-image: url('../slike/usk1.png');
+}
+#uskoro #filmovi .movies  #usk2 {
+	background-image: url('../slike/usk2.png');
+}
+#uskoro #filmovi .movies  #usk3 {
+	background-image: url('../slike/usk3.png');
+}
+#uskoro #filmovi .movies  #usk4 {
+	background-image: url('../slike/usk4.png');
+}
+#uskoro #filmovi .movies  #usk5 {
+	background-image: url('../slike/usk5.png');
+}
+#uskoro #filmovi .movies  #usk6 {
+	background-image: url('../slike/usk6.png');
+}
+
+
+														/*Ukradena princeza*/
+														
+#sadrzaj #ukradenaPrinceza {
+	background-image: url('../slike/2.png');
+}														
+												/*Svet iz doba jure*/
+												
+#sadrzaj #jura {
+	background-image: url('../slike/3.png');
+}
+#sadrzaj #deadpool {
+	background-image: url('../slike/6.png');
+}
+													/*Klub zadovoljnih zena*/
+#sadrzaj #klubZena {
+	background-image: url('../slike/7.png');
+}
+
+															/*Deadpool2 */
+															
+#sadrzaj #osvetnici {
+	background-image: url('../slike/8.png');
+}
+
+
+														/* Reponsive*/
+														
+@media screen and (max-width: 760px ) {
+	#wrapper {
+		width: 100%;
+	}
+	#gornji #logovanje {
+		width: 40%;
+	}
+	#gornji #mreze {
+		width: 20%;
+	}
+	#srednji #desno {
+		width: 50%;
+		background-image: url('../slike/deadpool1.png');
+	}
+	#srednji #levo {
+		width: 45%;
+	}
+	#srednji #levo #slika {
+		background-image: url('../slike/kokola1.png');
+	}
+	#srednji #levo #natpis h1 {
+		font-size: 27px;
+	}
+	#meni{
+		border-bottom: 1px solid #fff;
+	}
+	#meni ul li {
+		display: none;
+	}
+	#meni #dugme, #meni #dugme #button {
+		display: block;
+		width: 100%;
+	}
+	#meni #dugme #button {
+		background-color: rgb(11, 13, 15);
+		color: #fff;
+		padding: 20px 0px;
+		font-size: 23px;
+		border-width: 0px;
+	}
+	#meni #dugme #button .fa-list {
+		font-size: 23px;
+		padding-right: 7px;
+	}
+	
+	#meni:hover  ul li {
+		display: block;
+		width: 100%;
+	}
+	#meni ul {
+		display: initial;
+		width: 100%;
+	}
+	#slajder {
+		display: none;
+	}
+	.repetoar, #uskoro{
+		padding-top: 200px;
+	}
+	.repetoar #filmovi .movies {
+		width: 50%;
+	}
+	.repetoar #filmovi .movies .film {
+		height: 250px;
+	}
+	#clanstvo #tekst1 {
+		width: 100%;
+		padding-right: 25px;
+	}
+	#clanstvo #bodovi {
+		float: none;
+		width: 100%;
+		text-align: center;
+		padding-top: 20px;
+	}
+	#onama #tekst2, #onama #sala {
+		width: 100%;
+		float: none;
+	}
+	#onama #sala {
+		width: 100%;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#onama  {
+		padding: 25px;
+	}
+	#onama #tekst2 {
+		padding: 0px;
+	}
+	#footer .futer {
+		width: 50%;
+	}
+	#oFilmu {
+		margin-top: 200px;
+		display: initial;
+	}
+	#oFilmu #video {
+		width: 100%;
+		height: 400px;
+	}
+	iframe {
+		margin-top: 200px;
+	}
+	#oFilmu #informacije {
+		width: 100%;
+		padding-left: 30px;
+		margin-top: 200px;
+	}
+	#sadrzaj #basSamLepa {
+		width: 25%;
+		height: 245px;
+	}
+	#sadrzaj #prepricano {
+		width: 75%;
+	}
+	#kontakt {
+		display: initial;
+		
+	}
+	#kontakt #kontNas, #kontakt #pozovite {
+		width: 100%;
+	}
+	#kontakt #pozovite {
+		padding: 25px 0px;
+	}
+	#kontakt #kontNas {
+		margin-top: 200px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#gornji #logovanje {
+		width: 50%;
+	}
+	#gornji #mreze {
+		width: 25%;
+	}
+	#srednji #desno {
+		display: none;
+	}
+	#srednji #levo  {
+		width: 65%;	
+	}
+	#srednji #levo #natpis h1 {
+    font-size: 30px;
+	}
+	.repetoar #filmovi .movies {
+		width:100%;
+	}
+	.repetoar ul li {
+		width: 17%;
+	}
+	.repetoar #filmovi .info {
+		height: 70px;
+	}
+	.repetoar #filmovi .info .vreme {
+		font-size: 22px;
+	}
+	.repetoar #filmovi .info .cena {
+		font-size: 19px;
+	}
+	.repetoar #filmovi .movies .film {
+		height: 310px;
+		width: 40%;
+	}
+	.repetoar #filmovi .movies #prvi {
+    background-image: url(../slike/1.1.png);
+	}
+	.repetoar #filmovi .movies #drugi{
+    background-image: url(../slike/2.1.png);
+	}
+	.repetoar #filmovi .movies #treci {
+    background-image: url(../slike/3.1.png);
+	}
+	.repetoar #filmovi .movies #sesti {
+    background-image: url(../slike/6.1.png);
+	}
+	.repetoar #filmovi .movies #sedmi {
+    background-image: url(../slike/7.1.png);
+	}
+	.repetoar #filmovi .movies #osmi {
+    background-image: url(../slike/8.1.png);
+	}
+	#uskoro #filmovi .movies .info {
+		height: 50px;
+	}
+	
+	#autor {
+		padding-right: 0px;
+	}
+	#autor #ja, #autor #oAutoru {
+		width:100%;
+		float: none;
+		padding-left: 20px;
+	}
+	#footer .futer {
+		width: 100%;
+	}
+	#sadrzaj #basSamLepa {
+		width: 100%;
+		height: 245px;
+		float: none;
+		background-size: initial;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	#sadrzaj #prepricano {
+		width: 100%;
+	}
+	
+	 
+}
+@media screen and (max-width: 480px) {
+	#gornji #logovanje {
+		width: 70%;
+	}
+	#gornji #mreze {
+		display: none;
+	}
+	#srednji #levo  {
+		width: 75%;	
+	}
+	#srednji #levo a {
+		width: 40%;	
+	}
+	#srednji #levo #natpis h1 {
+    font-size: 28px;
+	}
+	.repetoar ul {
+		width: 90%;
+	}
+	.repetoar ul li {
+		width: 20%;
+	}
+	.repetoar #filmovi .movies .film {
+		height: 270px;
+		width: 45%;
+	}
+	#onama #sala {
+		background-image: url('../slike/sala1.1.png');
+	}
+}
+
+/* PRIKAZ MENIJA*/
+
+/*function prikazMeni(){
+	var nizMeni=['Pocetna','Repetoar','Predstave','Kontakt','O autoru'];
+	var nizLinkovi=['index.html','oAutoru.html','blagajna.html'];
+	var podmRepetoar=['Repetoar','Rezervacije','Plan sedenja i cene'];
+	var podmPredstave=['Opera','Balet','Predstave','Mjuzikl'];
+	var ispis="<ul id='meni>'";
+	var nav= document.getElementById('navigacija');
+	for(var i=0;i<nizMeni.length;i++){
+		if(i==0){
+			ispis+="<li>"+"<a href='"+nizLinkovi[i]+"'>"+ nizMeni[i]+"</li>";
+		}else if(i==4){
+			ispis+="<li>"+ "<a href='"+nizLinkovi[1]+"'>"+ nizMeni[i]+"</li>";
+		}else if(i==1){
+			ispis+="<li class='otkriveno' id='repetoar' >"+nizMeni[i];
+			ispis+="<ul class='skriveno' id='sakriRep'>";
+			for(var j=0;j<podmRepetoar.length;j++){
+				ispis+="<li><a href='"+podmRepetoar[j]+"'>"+podmRepetoar[j]+"</a></li>";
+			}
+			ispis+="</ul>";
+		}else if(i==2){
+			ispis+="<li class='otkriveno' id='predstave' >"+nizMeni[i];
+			ispis+="<ul class='skriveno' id='sakriPred'>";
+			for(var j=0;j<podmPredstave.length;j++){
+				ispis+="<li><a href='"+podmPredstave[j]+"'>"+podmPredstave[j]+"</a></li>";
+			}
+			ispis+="</ul>";
+		}else if(i==3){
+			ispis+="<li class='otkriveno'>"+nizMeni[i];
+			ispis+="<ul class='skriveno'>"+"<li><a href='"+nizLinkovi[2]+"'></a></li></ul>";
+		}
+		
+	}
+	ispis+="<input type='search' id='pretrazi' name='pretrazi' placeholder='Pretrazite..'/><i class='material-icons padd'>search</i>";
+	nav.innerHTML=ispis;
+}*/
